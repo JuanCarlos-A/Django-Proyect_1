@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Categoria(models.Model):
@@ -13,4 +14,8 @@ class Producto(models.Model):
     # RESTRICT : Solo elimina el producto si no existen mas produtos con la misma caracteristica (Categoria en este caso)
     # SET_NULL : Set es introduce un valor nulo en el campo
     # SET_DEFAULT : Introduce el valor por defecto
-    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
+    categoria = models.ForeignKey(
+        Categoria,
+        on_delete=models.CASCADE
+    )
+    creado_en = models.DateTimeField(default=timezone.now)
