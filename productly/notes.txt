@@ -3,3 +3,62 @@ DJANGO FRAMEWORK
     Este es un framework de python especializado en la creacion de sitios web complejos, este framework cuenta 
     con herramientas ya creadas para poder facilitar la creacion de paginas. Es especializado en la funcionalidad
     y no en el estilo de la pagina.
+
+
+    Instalacion de DJANGO
+
+        Preferiblmente cuando trabajas en un proyecto es una buena practica utilizar entornos de desarrollo,
+        ya sea el integrado en el core de python "env" o utilizar otros disponibles.
+
+            Intalacion y Inicializacion de Pipenv
+
+                Este es una libreria que nos permite configurar entornos de desarrollo.
+
+                    pip install pipenv : Instalacion de la herramienta para manejar el entorno
+
+                    pipenv install nombredelalibreria : Instalacion de una libreria dentro del entorno controlado
+
+                    activate : Puedes utilizar el entorno virtual haciendo uso de la activacion dentro de la terminal
+
+                    pipenv shell : Ejecutar las variables de entorno y sus configuraciones
+        
+
+        Con el entorno ya creado podemos proceder a  instalar el framework de Django, vamos a utilizar el siguiente comando
+
+        pipenv install django 
+
+        
+    Creacion de proyecto Django 
+
+        Dentro de la carpeta donde queramos crear el proyecto ejecutamos en la terminal la siguiente linea:
+
+            django-admin startproject nombreproyecto .
+
+        Con esto realizado vamos a poder crear un paquete con el nombre del proyecto,
+
+        
+    Archivo Manage.py 
+
+        Este archivo cuenta con toas las herramientas necesarias para manipular el proyecto.
+
+
+    Aplicaciones dentro de un Proyecto 
+
+        Estando dentro de un proyecto podemos tener multiples aplicaciones que no necesariamente no tienen que 
+        comunicarse entre si. Una aplicacion es mas pequeña y reutilizable.
+
+
+    Utilizacion del manage.py 
+
+        Con el manage.py ya creado nosotros podemos ejecutar distintos comandos en la terminal que seran iunterpretados
+        por django.
+
+        Comando startapp nombreapp : Crea un paquete nuevo que sera tomado como la nueva aplicacion 
+
+        Comando runserver : Con este comando podemos ejecutar el server con el cual podemos visualizar nuestra aplicacion.
+
+
+
+    Modulos de views.py 
+
+        Este modulos se encarga de tomar el http response y poder urilizar la informacion que contiene
