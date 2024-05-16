@@ -1,0 +1,5 @@
+DJANGO FRAMEWORK
+
+    Este es un framework de python especializado en la creacion de sitios web complejos, este framework cuenta 
+    con herramientas ya creadas para poder facilitar la creacion de paginas. Es especializado en la funcionalidad
+    y no en el estilo de la pagina.
