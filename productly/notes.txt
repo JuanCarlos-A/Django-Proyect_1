@@ -82,3 +82,13 @@ DJANGO FRAMEWORK
         ya cuenta incluida.
 
             python manage.py createsuperuser : Nos permite crear un usuario para la tabla de administracion del sitio.
+
+
+    Modulos de View.py
+
+        Los modulos de view especifican que valor sera devuelto al sitio web al especificar la url.
+
+        import JsonResponse : Este nos permite tomar unos datos dentro de un iterable y devolver un formato 
+        de JSON.
+
+        import HttpResponse : Nos permite enviar un objeto con los datos por medio de un metodo http
