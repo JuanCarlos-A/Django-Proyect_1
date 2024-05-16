@@ -62,3 +62,16 @@ DJANGO FRAMEWORK
     Modulos de views.py 
 
         Este modulos se encarga de tomar el http response y poder urilizar la informacion que contiene
+
+
+    ORM Objetc Relational Mapping
+
+        Este es un concepto conocido dentro del desarrollo web el cual es una herramienta la cual nos permite desde clases
+        creadas en un lenguaje distinta a sql compararlas con tablas sql y partir en la creacion o actualizacion de 
+        registros.
+
+
+    Modulo de Models
+
+        Dentro de este modulo creamos clases de python que nos permitira crear una BD desde la aplicacion que luego podra ser 
+        comparada con la base de datos real. Los atributos de estas clases son los attributes que tendra la tabla.
