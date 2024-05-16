@@ -75,3 +75,10 @@ DJANGO FRAMEWORK
 
         Dentro de este modulo creamos clases de python que nos permitira crear una BD desde la aplicacion que luego podra ser 
         comparada con la base de datos real. Los atributos de estas clases son los attributes que tendra la tabla.
+
+
+    Modulo de admin.py 
+        Este modelos nos indica la configuracion que tendra el sitio web dentro de la herramienta de administrador con la que
+        ya cuenta incluida.
+
+            python manage.py createsuperuser : Nos permite crear un usuario para la tabla de administracion del sitio.
