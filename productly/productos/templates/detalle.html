@@ -8,6 +8,11 @@
     <p>{{ producto.stock }}</p>
     <p>{{ producto.puntaje }}</p>
     <p>{{ producto.creado_en }}</p>
+    <p>
+        <a href="{% url 'productos:index' %}">
+            Volver
+        </a>
+    </p>
 </div>
 
 {% endblock content %}
