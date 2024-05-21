@@ -105,3 +105,11 @@ DJANGO FRAMEWORK
 
         Como tal la primera opcion de busqueda quedaria dentro de la carpeta 
         de la aplicacion templates.
+
+
+    Tomar argumentos de la url
+
+        Dentro de Django nosotros podemos tomar los argumentos directamente de 
+        la url. Tenemos que gestionar los modulos de views y los modulos de urls 
+        especificand que url debe tomar como patron de url y luego especificar
+        
