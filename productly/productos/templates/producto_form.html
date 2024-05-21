@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <form action="{% url 'productos:formulario'%}" method="post">
+    <form action="{% url 'productos:formulario'%}" method="post" novalidate>
         {% csrf_token %}
         {{ form }}
         <button type="submit" class="btn btn-primary">Guardar</button>

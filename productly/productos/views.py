@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import Http404  # noqa: F401
+from django.http import HttpResponseRedirect  # noqa: F401
 from .models import Producto
 from .forms import ProductoForm
 
@@ -23,9 +23,16 @@ def detalle(request, producto_id):
         )
 
 def formulario(request):
-    form = ProductoForm()
+    if request.method == 'POST':
+        form = ProductoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/productos')
+    else: 
+        form = ProductoForm()
+        
     return render(
-        request,
+        request,    
         'producto_form.html',
         {'form' : form}
     )
