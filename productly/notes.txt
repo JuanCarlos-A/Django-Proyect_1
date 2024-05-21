@@ -111,5 +111,28 @@ DJANGO FRAMEWORK
 
         Dentro de Django nosotros podemos tomar los argumentos directamente de 
         la url. Tenemos que gestionar los modulos de views y los modulos de urls 
-        especificand que url debe tomar como patron de url y luego especificar
+        especificand que url debe tomar como patron de url y luego especificar.
+
+
+    Clase de ModelForm 
+
+        Dentro de django nosotros podemos espedcificar como queremos renderizar 
+        un formulario segun un modelo con el que ya contemos, es decir que nosotros 
+        podemos utilizar los atributos especificamos en los modelos y django se 
+        encarga de generar el html de cada campo junto con su respectivo tipo de 
+        dato que necesita.
+
+
+    Validacion de Campos
+
+        Dentro de la validacion de campos podemos utilizar el parametro que toma 
+        request dentro del modulo de views y saber que podemos especificar si la 
+        peticion de este formulario es mediante un POST para la creacion de un 
+        atributo.
         
+
+    Utilizar enlaces especificados dentro de Django
+
+        Dentro de Django nosotros podemos utilizar los url dentro del modulo de url 
+        de la aplicacion y de esta forma podemos hacer uso de los url deacuerdo a 
+        los patrones de url.
