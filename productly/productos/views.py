@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import Http404
+from django.http import Http404  # noqa: F401
 from .models import Producto
+from .forms import ProductoForm
 
 
 # Create your views here.
@@ -20,4 +21,12 @@ def detalle(request, producto_id):
         'detalle.html', 
         context={'producto' : producto}
         )
+
+def formulario(request):
+    form = ProductoForm()
+    return render(
+        request,
+        'producto_form.html',
+        {'form' : form}
+    )
     
