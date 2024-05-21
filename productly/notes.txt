@@ -92,3 +92,16 @@ DJANGO FRAMEWORK
         de JSON.
 
         import HttpResponse : Nos permite enviar un objeto con los datos por medio de un metodo http
+
+
+    Designar una plantilla para todas las aplicaciones
+
+        Dentro de Django nosotros podemos diseñar una plantilla que pueda ser 
+        aplicada a distintas aplicaciones si nosotros cambiamos las settings 
+        dentro de la carpeta principal del proyecto y dentro de la variable
+        TEMPLATES en la llave DIRS nosotros podemos especificar una segunda 
+        opcion de busqueda para que el motor de plantillas de django pueda ir 
+        a buscar. 
+
+        Como tal la primera opcion de busqueda quedaria dentro de la carpeta 
+        de la aplicacion templates.
