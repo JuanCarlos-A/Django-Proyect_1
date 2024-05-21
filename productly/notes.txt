@@ -39,7 +39,7 @@ DJANGO FRAMEWORK
         
     Archivo Manage.py 
 
-        Este archivo cuenta con toas las herramientas necesarias para manipular el proyecto.
+        Este archivo cuenta con todas las herramientas necesarias para manipular el proyecto.
 
 
     Aplicaciones dentro de un Proyecto 
