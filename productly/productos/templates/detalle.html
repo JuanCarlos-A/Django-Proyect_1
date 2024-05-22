@@ -2,14 +2,18 @@
 
 {% block content %}
 
-<div>
-    <h6>{{ producto.nombre }}</h6>
-    <p>{{ producto.categoria }}</p>
-    <p>{{ producto.stock }}</p>
-    <p>{{ producto.puntaje }}</p>
-    <p>{{ producto.creado_en }}</p>
-    <p>
-        <a href="{% url 'productos:index' %}">
+<div class="card text-bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <h6 class="card-title">{{ producto.nombre }}</h6>
+    <div class="card-body">
+
+        <p class="card-text">{{ producto.stock }}</p>
+        <p class="card-text">{{ producto.categoria }}</p>
+        <p class="card-text">{{ producto.puntaje }}</p>
+        <p class="card-text">{{ producto.creado_en }}</p>
+        <p class="card-text">
+    </div>
+        <a class="btn btn-primary" href="{% url 'productos:index' %}">
             Volver
         </a>
     </p>
